@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter Miľovčík</title>
+    <title>Peter Miľovčík - Senior Key Expert in Software Testing and Quality Engineering</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +19,8 @@
         }
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
+            background: #f8f8f8;
         }
         header h1 {
             margin: 0;
@@ -31,6 +32,36 @@
             font-weight: normal;
             color: #666;
         }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.1em;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background: #f4f4f4;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+        }
+        .hero a {
+            text-decoration: none;
+            color: #fff;
+            background: #000;
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
         section {
             margin: 50px 0;
         }
@@ -40,15 +71,33 @@
             margin-bottom: 20px;
             font-size: 2em;
         }
-        .links a {
-            display: block;
-            color: #000;
-            text-decoration: none;
-            margin: 10px 0;
-            font-size: 1.2em;
+        .projects, .blogs, .contact, .conferences {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .links a:hover {
-            text-decoration: underline;
+        .projects div, .blogs div, .contact div, .conferences div {
+            flex: 1 1 45%;
+            background: #f8f8f8;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .contact form button {
+            padding: 10px;
+            font-size: 1.1em;
+            color: #fff;
+            background: #000;
+            border: none;
+            cursor: pointer;
         }
         footer {
             text-align: center;
@@ -61,26 +110,100 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>Peter Miľovčík</h1>
+        <h2>Senior Key Expert in Software Testing and Quality Engineering</h2>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#conferences">Conferences</a>
+            <a href="#projects">Projects</a>
+            <a href="#blogs">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
     <div class="container">
-        <header>
-            <h1>Peter Miľovčík</h1>
-            <h2>Senior Key Expert in Software Testing and Quality Engineering</h2>
-        </header>
+        <div class="hero">
+            <h2>Welcome to My Personal Website</h2>
+            <p>Discover my work, read my blog, and get in touch!</p>
+        </div>
 
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Hello! I'm Peter Miľovčík, a senior key expert passionate about continuous learning and improvement, interested in testing, architecture, personal knowledge management, teaching, .NET, and more, actively promoting a less stressful development. Welcome to my personal webpage!
+                Hello! I'm Peter Miľovčík, a senior key expert from Slovakia passionate about continuous learning and improvement, interested in testing, architecture, personal knowledge management, teaching, .NET, generative AI, and more, actively promoting a less stressful development. I currently work for Siemens Healthineers.
             </p>
         </section>
 
+        <section id="conferences">
+            <h2>Conferences</h2>
+            <div class="conferences">
+                <div>
+                    <h3>OpenSlava '23 - ChatGPT in Software Testing - Analyzing Outcomes and Implications</h3>
+                    <p>In this presentation, we will dive into using artificial intelligence in software testing, particularly the ChatGPT model by OpenAI. By exploring experiment use cases, we will unpack how ChatGPT can be used in software testing, improving efficiency. We will present the outcomes of these cases, detailing the positive impacts and any challenges encountered along the way. Moreover, we will examine the broader implications of using AI in software testing, shedding light on its potential for the future. Whether you're a seasoned software engineer or simply interested in the latest AI advancements, this talk promises valuable insights and discussion. Join us as we explore this exciting frontier.</p>
+                    <a href="https://www.youtube.com/watch?v=lLmlkZM9wKg" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div>
+                    <h3>Generative AI - Requirements Generation</h3>
+                    <p>This project is designed to generate requirement text based on the provided input context. It strictly adheres to the IEEE 29148 Quality Criteria, ensuring the production of high-quality, clear, and concise requirements.</p>
+                    <a href="https://generative-ai-requirement-text.azurewebsites.net/" target="_blank">Try it</a>
+                </div>
+                <div>
+                    <h3>Generative AI - Requirements to Test Cases</h3>
+                    <p>This project leverages generative AI to transform software requirements into test cases, streamlining the testing process and ensuring comprehensive coverage. It uses natural language processing to understand the requirements and generate relevant test scenarios. This tool aims to reduce manual effort and improve the efficiency of the software testing process.</p>
+                    <a href="https://generative-ai-test-case.azurewebsites.net/" target="_blank">Try it</a>
+                </div>
+                <div>
+                    <h3>Generative AI - Test Case Reviewer</h3>
+                    <p>This project utilizes Generative AI to review and evaluate manual test cases, steps, and quality. By leveraging advanced machine learning techniques, it can identify potential gaps, redundancies, and inefficiencies in the test cases. This not only ensures a high standard of quality but also significantly reduces the time and effort required for manual review.</p>
+                    <a href="https://generative-ai-test-case-review.azurewebsites.net/" target="_blank">Try it</a>
+                </div>
+                <div>
+                    <h3>Generative AI - Requirements Risk Management</h3>
+                    <p>This project employs Generative AI for conducting risk analysis, evaluation, and mitigation based on provided requirements. The AI system is capable of identifying potential risks, assessing their impact, and suggesting appropriate mitigation strategies.</p>
+                    <a href="https://generative-ai-risk-management.azurewebsites.net/" target="_blank">Try it</a>
+                </div>
+                <div>
+                    <h3>Generative AI - Requirements to Gherkin Language</h3>
+                    <p>This project utilizes Generative AI to transform requirement text into Gherkin language scenarios. By leveraging advanced natural language processing techniques, it can interpret the requirements and generate corresponding Gherkin scenarios. This not only streamlines the process of writing acceptance tests in Behavior-Driven Development (BDD), but also ensures that the tests accurately reflect the intended functionality of the software.</p>
+                    <a href="https://generative-ai-requirement2gherkin.azurewebsites.net/" target="_blank">Try it</a>
+                </div>
+            </div>
+        </section>
+
         <section id="blogs">
-            <h2>My Blogs and Other Resources</h2>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/peter-milovcik/">My LinkedIn Profile - talking mainly about testing, but also many different topics.</a>
-                <a href="https://publish.obsidian.md/petermilovcik">My Public Obsidian Knowledge Library - knowledge collection of different concepts.</a>
-                <a href="https://dev.to/petermilovcik">My Dev.to Blog - posts mainly about software development.</a>
-                <a href="https://medium.com/">My Medium Blog - posts mainly about Obsidian note taking tool.</a>
+            <h2>My Blogs</h2>
+            <div class="blogs">
+                <div>
+                    <h3>Dev.to</h3>
+                    <p>Posts dedicated to software development mainly in .NET.</p>
+                    <a href="https://dev.to/petermilovcik" target="_blank">Read more</a>
+                </div>
+                <div>
+                    <h3>Medium.com</h3>
+                    <p>Posts mainly about Obsidian note taking tool and personal knowledge management.</p>
+                    <a href="https://medium.com/@petermilovcik" target="_blank">Read more</a>
+                </div>
+                <div>
+                    <h3>My Obsidian Public Vault</h3>
+                    <p>Explore my knowledge hub in Obsidian.</p>
+                    <a href="https://publish.obsidian.md/petermilovcik/Knowledge/Welcome+to+My+Public+Vault" target="_blank">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div>
+                    <p>Connect on LinkedIn: <a href="https://www.linkedin.com/in/peter-milovcik/">peter-milovcik</a></p>
+                </div> 
             </div>
         </section>
     </div>
