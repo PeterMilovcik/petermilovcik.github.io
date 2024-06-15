@@ -69,18 +69,26 @@ section h2 {
     margin-bottom: 20px;
     font-size: 2em;
 }
-.projects, .blogs, .conferences {
+.projects {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.projects div, .blogs div, .conferences div {
+.projects div {
     flex: 1 1 45%;
     background: #f8f8f8;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.conferences {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 20px;
+}
 .conferences div {
+    flex: 1 1 45%;
+    background: #f8f8f8;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -92,11 +100,19 @@ section h2 {
 }
 .conferences .conference {
     flex-direction: column;
-    padding-top: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.conferences {
-    flex-direction: column;
-    padding-top: 20px;
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.blogs div {
+    background: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
 }
 .contact {
     display: flex;
