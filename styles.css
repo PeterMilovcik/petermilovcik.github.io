@@ -141,7 +141,7 @@ footer {
     color: #777;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .conferences img {
         max-width: 100%;
         object-fit: cover;
