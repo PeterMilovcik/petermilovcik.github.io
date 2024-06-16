@@ -15,6 +15,9 @@ header {
     padding: 20px 0;
     background: #181818;
     color: #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 header h1 {
     margin: 0;
@@ -62,6 +65,14 @@ nav a:hover {
 }
 section {
     margin: 50px 0;
+}
+section::before {
+    content: '';
+    display: block;
+    height: 160px; /* height of your header + padding */
+    margin: -160px 0 0; /* negative margin of the same amount */
+    visibility: hidden;
+    pointer-events: none;
 }
 section h2 {
     border-bottom: 2px solid #000;
