@@ -91,7 +91,7 @@ section h2 {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.conferences {
+.events {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -99,25 +99,25 @@ section h2 {
     align-content: stretch;
     gap: 20px;
 }
-.conferences div {
+.events div {
     flex: 1 1 200px;
     background: #f8f8f8;
     display: flex;
     flex-direction: row;
     align-items: stretch;
 }
-.conferences img {
+.event img {
     max-width: 30%;
     object-fit: cover;
 }
-.conferences .conference {
+.events .event {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     min-width: 200px;
 }
-.conferences .conference .conference-text {
+.events .event .event-text {
     flex-direction: column;
     padding: 20px;
     min-width: 200px;
@@ -146,8 +146,8 @@ footer {
     color: #777;
 }
 
-@media (max-width: 600px) {
-    .conferences img {
+@media (max-width: 800px) {
+    .events img {
         max-width: 100%;
         object-fit: cover;
     }
