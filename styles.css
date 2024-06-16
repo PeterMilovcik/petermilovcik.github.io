@@ -104,12 +104,12 @@ section h2 {
     flex-wrap: wrap;
     flex-direction: row;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    min-width: 300px;
+    min-width: 200px;
 }
 .conferences .conference .conference-text {
     flex-direction: column;
     padding: 20px;
-    min-width: 300px;
+    min-width: 200px;
 }
 .blogs {
     display: flex;
@@ -139,4 +139,11 @@ footer {
     margin-top: 50px;
     font-size: 0.9em;
     color: #777;
+}
+
+@media (max-width: 800px) {
+    .conferences img {
+        max-width: 100%;
+        object-fit: cover;
+    }
 }
