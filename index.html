@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://petermilovcik.github.io/">
     <meta name="robots" content="index, follow">
     <title>Peter Miľovčík - Driving Testing Excellence through Strategic Planning & Futuristic Vision | Enthusiastic Learner | Idea Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -42,23 +43,42 @@
 
         <section id="events">
             <h2>Events</h2>
-            <div class="events">
-                <div class="event">
-                    <img src="images/codecon_2023_zilina_panel.jpg" alt="Panel discussion at CodeCon 2023 Zilina">
-                    <div class="event-text">
-                        <h3>Conference - CodeCon '23 - Žilina - Artificial Intelligence - Panel Discussion</h3>
-                        <p>I had the opportunity to participate in CodeCon 2023 conference in Zilina, where I took part in a panel discussion dedicated to Artificial Intelligence. During the discussion, I shared my views on the current and future state of AI, as well as some examples of using AI in radiology. Additionally, I presented practical examples of using Language Models (LLMs) during software development and software testing.</p>
+        </section>
+        <section id="cards" class="d-flex justify-content-around">
+            <input type="checkbox" id="card-1"/>
+            <label class="col-md-4 card-container" for="card-1">
+                <div class="card card-flip" style="width: 24rem;">
+                    <div class="card front">
+                        <img src="images/codecon_2023_zilina_panel.jpg" class="card-img-top" alt="Conference - CodeCon '23 - Žilina - Artificial Intelligence - Panel Discussion">
+                        <div class="card-body">
+                            <h5 class="card-title">Conference - CodeCon '23 - Žilina</h5>
+                            <p class="card-text">Artificial Intelligence - Panel Discussion</p>
+                        </div>
+                    </div>
+                    <div class="card back">
+                        <h5 class="card-title m-3">Panel Discussion: Artificial Intelligence</h5>
+                        <p class="card-text m-3">I had the opportunity to participate in CodeCon 2023 conference in Zilina, where I took part in a panel discussion dedicated to Artificial Intelligence. During the discussion, I shared my views on the current and future state of AI, as well as some examples of using AI in radiology. Additionally, I presented practical examples of using Language Models (LLMs) during software development and software testing.</p>
                     </div>
                 </div>
-                <div class="event">
-                    <img src="images/openslava_2023_bratislava.jpg" alt="Presentation at OpenSlava 2023 Bratislava">
-                    <div class="event-text">
-                        <h3>Conference - OpenSlava '23 - Bratislava - ChatGPT in Software Testing - Analyzing Outcomes and Implications</h3>
-                        <p>In this conference, I talked about using artificial intelligence in software testing, particularly the ChatGPT model by OpenAI. By exploring experiment use cases, I unpacked how ChatGPT could be used in software testing, improving efficiency. I presented the outcomes of these cases, detailing the positive impacts and any challenges encountered along the way. Moreover, I examined the broader implications of using AI in software testing, shedding light on its potential for the future.</p>
-                        <a href="https://www.youtube.com/watch?v=lLmlkZM9wKg" target="_blank">Watch talk</a>
+            </label>
+
+            <input type="checkbox" id="card-2"/>
+            <label class="col-md-4 card-container" for="card-2">
+                <div class="card card-flip" style="width: 24rem;">
+                    <div class="card front">
+                        <img src="images/openslava_2023_bratislava.jpg" class="card-img-top" alt="Conference - CodeCon '23 - Žilina - Artificial Intelligence - Panel Discussion">
+                        <div class="card-body">
+                            <h5 class="card-title">Conference - OpenSlava '23 - Bratislava</h5>
+                            <p class="card-text">ChatGPT in Software Testing - Analyzing Outcomes and Implications</p>
+                        </div>
+                    </div>
+                    <div class="card back">
+                        <h5 class="card-title m-3">ChatGPT in Software Testing - Analyzing Outcomes and Implications</h5>
+                        <p class="card-text m-3">I had the opportunity to participate in CodeCon 2023 conference in Zilina, where I took part in a panel discussion dedicated to Artificial Intelligence. During the discussion, I shared my views on the current and future state of AI, as well as some examples of using AI in radiology. Additionally, I presented practical examples of using Language Models (LLMs) during software development and software testing.</p>
+                        <a class="m-3" href="https://www.youtube.com/watch?v=lLmlkZM9wKg" target="_blank">Watch talk</a>
                     </div>
                 </div>
-            </div>
+            </label>
         </section>
 
         <section id="projects">
@@ -128,5 +148,6 @@
     <footer>
         &copy; 2024 Peter Miľovčík. All rights reserved.
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
