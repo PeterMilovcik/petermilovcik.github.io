@@ -158,16 +158,14 @@ footer {
   }
 
   .card-img-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2; /* Ensures the overlay content is above the image */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 2; /* Ensures the overlay content is above the image */
     text-align: center;
+    background: rgb(24,24,24);
+    background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(255,255,255,0) 50%);
+    color: #f8f8f8;
 }
   
   input[type='checkbox'] {
@@ -177,6 +175,7 @@ footer {
   /* Flip Cards CSS */
   .card-container {
     display: flex;
+    flex-grow: 1;
   }
   
   .card-flip {
