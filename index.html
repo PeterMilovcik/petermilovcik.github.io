@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Peter Miľovčík - Discover my work, read my blog, and get in touch!">
-    <meta name="keywords" content="Peter Milovcik, Peter Miľovčík, Software Testing, Quality Engineering, Projects, Experiences, Blog, Senior Key Expert, Test Architect">
+    <meta name="keywords"
+        content="Peter Milovcik, Peter Miľovčík, Software Testing, Quality Engineering, Projects, Experiences, Blog, Senior Key Expert, Test Architect">
     <meta name="author" content="Peter Miľovčík">
-    <meta property="og:title" content="Peter Miľovčík - Driving Testing Excellence through Strategic Planning & Futuristic Vision | Enthusiastic Learner | Idea Generator">
+    <meta property="og:title"
+        content="Peter Miľovčík - Driving Testing Excellence through Strategic Planning & Futuristic Vision | Enthusiastic Learner | Idea Generator">
     <meta property="og:description" content="Discover my work, read my blog, and get in touch!">
     <meta property="og:url" content="https://petermilovcik.github.io/">
     <meta name="robots" content="index, follow">
-    <title>Peter Miľovčík - Driving Testing Excellence through Strategic Planning & Futuristic Vision | Enthusiastic Learner | Idea Generator</title>
+    <title>Peter Miľovčík - Driving Testing Excellence through Strategic Planning & Futuristic Vision | Enthusiastic
+        Learner | Idea Generator</title>
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -20,89 +24,198 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <h1>Peter Miľovčík</h1>
-        <h2>Driving Testing Excellence through Strategic Planning & Futuristic Vision | Enthusiastic Learner | Idea Generator</h2>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#events">Events</a>
-            <a href="#projects">Projects</a>
-            <a href="#blogs">Blog</a>
-            <a href="#contact">Contact</a>
+        <style>
+            /* Carousel styling */
+            #introCarousel,
+            .carousel-inner,
+            .carousel-item,
+            .carousel-item.active {
+                height: 100vh;
+            }
+
+            .carousel-item:nth-child(1) {
+                background-image: url('images/2024-06-27_OpenGate.jfif');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .carousel-item:nth-child(2) {
+                background-image: url('images/codecon_2023_zilina_panel.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .carousel-item:nth-child(3) {
+                background-image: url('images/openslava_2023_bratislava.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            /* Height for devices larger than 576px */
+            @media (min-width: 992px) {
+                #introCarousel {
+                    margin-top: -58.59px;
+                }
+
+                #introCarousel,
+                .carousel-inner,
+                .carousel-item,
+                .carousel-item.active {
+                    height: 50vh;
+                }
+            }
+
+            .navbar .nav-link {
+                color: #fff !important;
+            }
+        </style>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#about" rel="nofollow">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#projects" rel="nofollow">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#blogs" rel="nofollow">Blogs</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav list-inline">
+                        <!-- Icons -->
+                        <li class="">
+                            <a class="nav-link" href="https://www.linkedin.com/in/peter-milovcik/" rel="nofollow" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/@softwaretestingjourney" rel="nofollow" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/SoftwareTestingJourney" rel="nofollow" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/softwaretestingjourney/" rel="nofollow" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/PeterMilovcik" rel="nofollow" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+        <!-- Carousel wrapper -->
+        <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-carousel-init>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center h-100 blur">
+                        <div class="text-white text-center" data-mdb-theme="dark">
+                            <h1 class="container">OpenGate '24 - Žilina</h1>
+                            <h5 class="container">Student projects presentation</h5>
+                            <div class="container">
+                                <p>At the "OpenGate ZA" event on June 27, 2024, in Zilina, Slovakia, I represented
+                                    Siemens Healthineers and served as the technical guarantor for OpenLab. I was proud
+                                    to see the top student projects from the Secondary Industrial School of Information
+                                    Technology in Kysucké Nové Mesto. These projects were part of a curriculum I helped
+                                    prepare, and I supported lab masters (teachers) from Siemens Healthineers and
+                                    Siemens Mobility, showcasing our commitment to advancing IT education in Slovakia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center h-100 blur">
+                        <div class="text-white text-center" data-mdb-theme="dark">
+                            <h1 class="container">Conference - CodeCon '23 - Žilina</h1>
+                            <h5 class="container">Artificial Intelligence - Panel Discussion</h5>
+                            <div class="container">
+                                <p>I had the opportunity to participate in CodeCon 2023 conference in Zilina, where I
+                                    took part in a panel discussion dedicated to Artificial Intelligence. During the
+                                    discussion, I shared my views on the current and future state of AI, as well as some
+                                    examples of using AI in radiology. Additionally, I presented practical examples of
+                                    using Language Models (LLMs) during software development and software testing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center h-100 blur" data-mdb-theme="dark">
+                        <div class="text-white text-center" data-mdb-theme="dark">
+                            <h1 class="container">Conference - OpenSlava '23 - Bratislava</h1>
+                            <h5 class="container">ChatGPT in Software Testing - Analyzing Outcomes and Implications</h5>
+                            <div class="container">
+                                <p>I had the opportunity to participate in CodeCon 2023 conference in Zilina, where I
+                                    took part in a panel discussion dedicated to Artificial Intelligence. During the
+                                    discussion, I shared my views on the current and future state of AI, as well as some
+                                    examples of using AI in radiology. Additionally, I presented practical examples of
+                                    using Language Models (LLMs) during software development and software testing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
     </header>
 
     <div class="container">
-        <div class="hero">
-            <h2>Welcome to My Personal Website</h2>
-            <p>Discover my work, read my blog, and get in touch!</p>
-        </div>
 
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Hello! I'm Peter Miľovčík, a senior key expert from Slovakia passionate about continuous learning and improvement, interested in testing, architecture, personal knowledge management, teaching, .NET, generative AI, and more, actively promoting a less stressful development. I currently work for Siemens Healthineers.
+                Hello! I'm Peter Miľovčík, a senior key expert from Slovakia passionate about continuous learning and
+                improvement, interested in testing, architecture, personal knowledge management, teaching, .NET,
+                generative AI, and more, actively promoting a less stressful development. I currently work for Siemens
+                Healthineers.
             </p>
-        </section>
-
-        <section id="events">
-            <h2>Events</h2>
-        </section>
-        <section id="cards" class="events">
-
-            <input type="checkbox" id="card-3"/>
-            <label class="event" for="card-3">
-                <div class="card-flip">
-                    <div class="card front">
-                        <img src="images/2024-06-27_OpenGate.jfif" class="rounded" alt="OpenGate '24 - Žilina">
-                        <div class="card-body card-img-overlay">
-                            <h5 class="card-title">OpenGate '24 - Žilina</h5>
-                            <p class="card-text">Student projects presentation</p>
-                        </div>
-                    </div>
-                    <div class="card back">
-                        <h5 class="card-title p-3">OpenGate '24 - Žilina - Student projects presentation</h5>
-                        <p class="card-text p-3">At the "OpenGate ZA" event on June 27, 2024, in Zilina, Slovakia, I represented Siemens Healthineers and served as the technical guarantor for OpenLab. I was proud to see the top student projects from the Secondary Industrial School of Information Technology in Kysucké Nové Mesto. These projects were part of a curriculum I helped prepare, and I supported lab masters (teachers) from Siemens Healthineers and Siemens Mobility, showcasing our commitment to advancing IT education in Slovakia.</p>
-                    </div>
-                </div>
-            </label>
-
-            <input type="checkbox" id="card-2"/>
-            <label class="event" for="card-2">
-                <div class="card-flip">
-                    <div class="card front">
-                        <img src="images/codecon_2023_zilina_panel.jpg" class="rounded" alt="Conference - CodeCon '23 - Žilina - Artificial Intelligence - Panel Discussion">
-                        <div class="card-body card-img-overlay">
-                            <h5 class="card-title">Conference - CodeCon '23 - Žilina</h5>
-                            <p class="card-text">Artificial Intelligence - Panel Discussion</p>
-                        </div>
-                    </div>
-                    <div class="card back">
-                        <h5 class="card-title p-3">Artificial Intelligence</h5>
-                        <p class="card-text p-3">I had the opportunity to participate in CodeCon 2023 conference in Zilina, where I took part in a panel discussion dedicated to Artificial Intelligence. During the discussion, I shared my views on the current and future state of AI, as well as some examples of using AI in radiology. Additionally, I presented practical examples of using Language Models (LLMs) during software development and software testing.</p>
-                    </div>
-                </div>
-            </label>
-
-            <input type="checkbox" id="card-1"/>
-            <label class="event" for="card-1">
-                <div class="card-flip">
-                    <div class="card front">
-                        <img src="images/openslava_2023_bratislava.jpg" class="rounded" alt="Conference - OpenSlava '23 - Bratislava">
-                        <div class="card-body card-img-overlay">
-                            <h5 class="card-title">Conference - OpenSlava '23 - Bratislava</h5>
-                            <p class="card-text">ChatGPT in Software Testing - Analyzing Outcomes and Implications</p>
-                        </div>
-                    </div>
-                    <div class="card back">
-                        <h5 class="card-title p-3">ChatGPT in Software Testing - Analyzing Outcomes and Implications</h5>
-                        <p class="card-text p-3">I had the opportunity to participate in CodeCon 2023 conference in Zilina, where I took part in a panel discussion dedicated to Artificial Intelligence. During the discussion, I shared my views on the current and future state of AI, as well as some examples of using AI in radiology. Additionally, I presented practical examples of using Language Models (LLMs) during software development and software testing.</p>
-                        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=lLmlkZM9wKg" target="_blank">Watch talk</a>
-                    </div>
-                </div>
-            </label>
-
         </section>
 
         <section id="projects">
@@ -110,27 +223,41 @@
             <div class="projects">
                 <div>
                     <h3>Generative AI - Requirements Generation</h3>
-                    <p>This project is designed to generate requirement text based on the provided input context. It strictly adheres to the IEEE 29148 Quality Criteria, ensuring the production of high-quality, clear, and concise requirements.</p>
+                    <p>This project is designed to generate requirement text based on the provided input context. It
+                        strictly adheres to the IEEE 29148 Quality Criteria, ensuring the production of high-quality,
+                        clear, and concise requirements.</p>
                     <a href="https://generative-ai-requirement-text.azurewebsites.net/" target="_blank">Try it</a>
                 </div>
                 <div>
                     <h3>Generative AI - Requirements to Test Cases</h3>
-                    <p>This project leverages generative AI to transform software requirements into test cases, streamlining the testing process and ensuring comprehensive coverage. It uses natural language processing to understand the requirements and generate relevant test scenarios. This tool aims to reduce manual effort and improve the efficiency of the software testing process.</p>
+                    <p>This project leverages generative AI to transform software requirements into test cases,
+                        streamlining the testing process and ensuring comprehensive coverage. It uses natural language
+                        processing to understand the requirements and generate relevant test scenarios. This tool aims
+                        to reduce manual effort and improve the efficiency of the software testing process.</p>
                     <a href="https://generative-ai-test-case.azurewebsites.net/" target="_blank">Try it</a>
                 </div>
                 <div>
                     <h3>Generative AI - Test Case Reviewer</h3>
-                    <p>This project utilizes Generative AI to review and evaluate manual test cases, steps, and quality. By leveraging advanced machine learning techniques, it can identify potential gaps, redundancies, and inefficiencies in the test cases. This not only ensures a high standard of quality but also significantly reduces the time and effort required for manual review.</p>
+                    <p>This project utilizes Generative AI to review and evaluate manual test cases, steps, and quality.
+                        By leveraging advanced machine learning techniques, it can identify potential gaps,
+                        redundancies, and inefficiencies in the test cases. This not only ensures a high standard of
+                        quality but also significantly reduces the time and effort required for manual review.</p>
                     <a href="https://generative-ai-test-case-review.azurewebsites.net/" target="_blank">Try it</a>
                 </div>
                 <div>
                     <h3>Generative AI - Requirements Risk Management</h3>
-                    <p>This project employs Generative AI for conducting risk analysis, evaluation, and mitigation based on provided requirements. The AI system is capable of identifying potential risks, assessing their impact, and suggesting appropriate mitigation strategies.</p>
+                    <p>This project employs Generative AI for conducting risk analysis, evaluation, and mitigation based
+                        on provided requirements. The AI system is capable of identifying potential risks, assessing
+                        their impact, and suggesting appropriate mitigation strategies.</p>
                     <a href="https://generative-ai-risk-management.azurewebsites.net/" target="_blank">Try it</a>
                 </div>
                 <div>
                     <h3>Generative AI - Requirements to Gherkin Language</h3>
-                    <p>This project utilizes Generative AI to transform requirement text into Gherkin language scenarios. By leveraging advanced natural language processing techniques, it can interpret the requirements and generate corresponding Gherkin scenarios. This not only streamlines the process of writing acceptance tests in Behavior-Driven Development (BDD), but also ensures that the tests accurately reflect the intended functionality of the software.</p>
+                    <p>This project utilizes Generative AI to transform requirement text into Gherkin language
+                        scenarios. By leveraging advanced natural language processing techniques, it can interpret the
+                        requirements and generate corresponding Gherkin scenarios. This not only streamlines the process
+                        of writing acceptance tests in Behavior-Driven Development (BDD), but also ensures that the
+                        tests accurately reflect the intended functionality of the software.</p>
                     <a href="https://generative-ai-requirement2gherkin.azurewebsites.net/" target="_blank">Try it</a>
                 </div>
             </div>
@@ -141,18 +268,28 @@
             <div class="blogs">
                 <div>
                     <h3>Dev.to</h3>
-                    <p>Posts dedicated to software development mainly in .NET. I share my insights, experiences, and tips on various topics such as C# and more. Whether you're a beginner or an experienced developer, you'll find valuable content to enhance your skills and stay up-to-date with the latest trends in the .NET ecosystem.</p>
+                    <p>Posts dedicated to software development mainly in .NET. I share my insights, experiences, and
+                        tips on various topics such as C# and more. Whether you're a beginner or an experienced
+                        developer, you'll find valuable content to enhance your skills and stay up-to-date with the
+                        latest trends in the .NET ecosystem.</p>
                     <a href="https://dev.to/petermilovcik" target="_blank">Read more</a>
                 </div>
                 <div>
                     <h3>Medium.com</h3>
-                    <p>Posts mainly about Obsidian note taking tool and personal knowledge management. I share my experiences, tips, and best practices for using Obsidian effectively to organize and manage personal knowledge. From creating a knowledge base to implementing effective note-taking strategies, my posts cover a wide range of topics to help you optimize your knowledge management workflow. Whether you're new to Obsidian or an experienced user, you'll find valuable insights and practical advice to enhance your note-taking and knowledge organization skills.</p>
+                    <p>Posts mainly about Obsidian note taking tool and personal knowledge management. I share my
+                        experiences, tips, and best practices for using Obsidian effectively to organize and manage
+                        personal knowledge. From creating a knowledge base to implementing effective note-taking
+                        strategies, my posts cover a wide range of topics to help you optimize your knowledge management
+                        workflow. Whether you're new to Obsidian or an experienced user, you'll find valuable insights
+                        and practical advice to enhance your note-taking and knowledge organization skills.</p>
                     <a href="https://medium.com/@petermilovcik" target="_blank">Read more</a>
                 </div>
                 <div>
                     <h3>My Obsidian Public Vault</h3>
-                    <p>Explore my knowledge hub in Obsidian, where I collect information about different concepts from the areas of software development, software testing, software architecture, and much more.</p>
-                    <a href="https://publish.obsidian.md/petermilovcik/Knowledge/Welcome+to+My+Public+Vault" target="_blank">Read more</a>
+                    <p>Explore my knowledge hub in Obsidian, where I collect information about different concepts from
+                        the areas of software development, software testing, software architecture, and much more.</p>
+                    <a href="https://publish.obsidian.md/petermilovcik/Knowledge/Welcome+to+My+Public+Vault"
+                        target="_blank">Read more</a>
                 </div>
             </div>
         </section>
@@ -162,9 +299,10 @@
             <div class="contact">
                 <div>
                     <a href="https://www.linkedin.com/in/peter-milovcik/" title="Visit my LinkedIn profile">
-                        <img src="https://img.icons8.com/?size=100&id=qNUNvR9aEWql&format=png&color=000000" width="50" alt="LinkedIn" />
+                        <img src="https://img.icons8.com/?size=100&id=qNUNvR9aEWql&format=png&color=000000" width="50"
+                            alt="LinkedIn" />
                     </a>
-                </div> 
+                </div>
             </div>
         </section>
     </div>
@@ -173,6 +311,8 @@
         &copy; 2024 Peter Miľovčík. All rights reserved.
     </footer>
     <!-- MDB - Material Design Bootstrap -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
 </body>
+
 </html>
