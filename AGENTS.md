@@ -24,7 +24,7 @@ Personal portfolio website for Peter Miľovčík, hosted on GitHub Pages at `pet
 
 ## Conventions
 
-- All content lives in `index.html` as a single page with anchor-linked sections (`#about`, `#projects`, `#blogs`, `#contact`).
+- All content lives in `index.html` as a single page with anchor-linked sections (`#about`, `#blogs`, `#contact`).
 - Use MDB component classes and `data-mdb-*` attributes for interactive UI (carousel, ripple, etc.).
 - External links use `target="_blank"` and `rel="nofollow"`.
 - Carousel background images are set via inline `<style>` in the header using `.carousel-item:nth-child(n)` selectors.
@@ -32,7 +32,6 @@ Personal portfolio website for Peter Miľovčík, hosted on GitHub Pages at `pet
 
 ## Adding Content
 
-- **New project**: Add a `<div>` inside `<div class="projects">` in the projects section.
 - **New carousel slide**: Add a `.carousel-item` in the carousel inner, a corresponding `nth-child` CSS rule for the background image, and update carousel indicators.
 - **New blog link**: Add a `<div>` inside `<div class="blogs">` in the blogs section.
 - **New image**: Place in `images/` directory; reference via relative path `images/filename.ext`.

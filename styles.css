@@ -74,7 +74,7 @@ section h2 {
     gap: 20px;
 }
 .projects div {
-    flex: 1 1 45%;
+    flex: 1 1 100%;
     background: #f8f8f8;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
