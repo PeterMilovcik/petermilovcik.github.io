@@ -15,7 +15,7 @@ header h2 {
 }
 .blur{
     /* padding:10vh 10vw; */
-    backdrop-filter:blur(3px) brightness(33%);
+    backdrop-filter:blur(3px) brightness(38%);
 }
 /* nav {
     text-align: center;
